@@ -5,11 +5,32 @@
     <title>练习-1：css selector</title>
     <style>
        /* you can test your css at here */
+
+        /*.section .title{*/
+            /*font-weight: bold;*/
+        /*}*/
+
+       /*.section > .title {*/
+           /*font-weight: bold;*/
+       /*}*/
+       /*.section,.title{*/
+           /*color: blue;*/
+       /*}*/
+
+       .section{
+           margin-left:500px;
+       }
+       .title{
+            color: blue;
+       }
+
     </style>
 </head>
 <body>
-    <div class="section">
+    <div>
         <h1 id="title" class="title">title</h1>
+        <p class="title">title1</p>
+        <p>title2 <span class="title section">title3</span></p>
     </div>
 </body>
 </html>
